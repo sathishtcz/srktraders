@@ -96,6 +96,8 @@ const Homepage = () => {
     },
   ];
 
+
+  
   const originalTiles = [
     { image: Floor, label: 'Floor Tiles (GVT)', category: 'Floor' },
     { image: Wall, label: 'Wall Tiles', category: 'Wall' },
