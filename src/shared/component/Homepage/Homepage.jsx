@@ -199,7 +199,7 @@ const Homepage = () => {
                 }`}
             >
               <img src={slide.image} alt={brands[index].name} className="w-full h-full object-cover" loading="lazy" />
-              <div className="absolute inset-0 bg-[#001C2B] opacity-40"></div>
+              <div className="absolute inset-0 bg-[#001C2B] opacity-60"></div>
               <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
                 <p className="alice-regular text-[20px] text-center 2xl:text-[50px] lg:text-[35px] md:text-[25px]">{slide.text}</p>
                 <button
@@ -253,7 +253,7 @@ const Homepage = () => {
                   <img
                     src={brand.logo}
                     alt={brand.name}
-                    className={`w-16 h-auto sm:w-20 md:w-24 lg:w-28 transition-all duration-300 ${activeSlide === index ? 'scale-100 opacity-100' : 'scale-75 opacity-50'
+                    className={`w-18 h-auto sm:w-20 md:w-24 lg:w-28 transition-all duration-300 ${activeSlide === index ? 'scale-120 opacity-100' : 'scale-75 opacity-50'
                       } hover:opacity-100`} loading="lazy"
                   />
                 </div>
@@ -288,7 +288,7 @@ const Homepage = () => {
             <p className="lg:block hidden alice-regular text-[20px] sm:text-[24px] lg:text-[30px] text-[#00A8FF] z-10">
               SRK Traders
             </p>
-            <p className="text-sm sm:text-[14px] lg:text-[16px] leading-[25px] sm:leading-[25px] lg:leading-[35px] text-justify z-10">
+            <p className="text-sm sm:text-base  lg:text-[16px] leading-[25px] sm:leading-[30px] lg:leading-[35px] text-justify z-10">
               SRK Traders dealers and supplies all the necessary products for the
               construction industry, including retail, commercial and industrial
               sectors. It is a one-stop-shop for buying Premium Tiles, Steel, Cement,
@@ -365,7 +365,9 @@ const Homepage = () => {
                   <div className="flex flex-col items-center">
                     <div
                       className="overflow-hidden cursor-pointer"
-                      onClick={() => navigate(`/our-products?category=${tile.category}`)}
+                      // onClick={() => navigate(`/our-products?category=${tile.category}`)}
+                      onClick={() => navigate(`/our-products`)}
+
                     >
                       <img
                         src={tile.image}
@@ -454,9 +456,9 @@ const Homepage = () => {
       </div>
 
       {/* Kajaria */}
-      <div className="pt-[30px] pb-[20px] px-4 sm:px-6 md:px-8 lg:px-[100px] mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-10 lg:gap-[40px]">
-          <p className="lg:hidden block text-center alice-regular text-[28px] sm:text-[40px] lg:text-[45px] text-[#00A8FF]">
+      <div className="lg:pt-[30px] pt-[5px] pb-[20px] px-4 sm:px-6 md:px-8 lg:px-[100px] mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-1 sm:gap-1 lg:gap-[40px]">
+          <p className="lg:hidden block text-center alice-regular text-[35px] sm:text-[40px] lg:text-[45px] text-[#00A8FF] underline">
             Kajaria
           </p>
           <div className='lg:hidden block '>
@@ -479,7 +481,7 @@ const Homepage = () => {
             <p className="lg:block hidden alice-regular text-[28px] sm:text-[40px] lg:text-[45px] text-[#00A8FF]">
               Kajaria
             </p>
-            <p className="text-sm sm:text-[14px] lg:text-[16px] leading-[20px] sm:leading-[25px] lg:leading-[30px] text-justify">
+            <p className="text-sm sm:text-base  lg:text-[16px] leading-[20px] sm:leading-[25px] lg:leading-[30px] text-justify sm:mt-2 mt-2">
               "Kajaria Tiles bring together style, strength, and innovation to transform any space. Known for their durability, stain resistance, and low maintenance, they’re perfect for both residential and commercial use."
             </p>
             <button
@@ -508,7 +510,7 @@ const Homepage = () => {
             <h2 className="alice-regular text-[32px] sm:text-[38px] md:text-[45px] text-white mt-5 text-left mb-4">
               Why Choose Us
             </h2>
-            <div className="grid 2xl:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-[81px] lg:gap-[40px] mt-12">
+            <div className="grid 2xl:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-[81px]  lg:gap-[70px]  mt-12">
               {cardData.map((card, index) => (
                 <div key={index} className="relative mx-auto w-full mb-7">
                   <img
@@ -521,7 +523,7 @@ const Homepage = () => {
                       <p className="text-[#00A8FF] text-center alice-regular text-[22px]">
                         {card.title}
                       </p>
-                      <p className="text-[#001C2B] leading-[28px] text-sm text-justify">
+                      <p className="text-[#001C2B] leading-[28px] text-sm sm:text-base lg:text-base text-justify">
                         {card.description}
                       </p>
                     </div>

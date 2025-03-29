@@ -60,8 +60,94 @@ function Contact() {
           </p>
         </div>
 
+
+
+
+
         {/* Main Content Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-[52px] bg-white rounded-lg p-4 sm:p-6 md:p-8 lg:p-10 max-w-[85rem] mx-auto shadow-[0_4px_8px_rgba(0,0,0,0.1),0_-4px_8px_rgba(0,0,0,0.1),4px_0_8px_rgba(0,0,0,0.1),-4px_0_8px_rgba(0,0,0,0.1)] ">
+
+          <div className='lg:hidden  block'>
+            <form className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 md:gap-6">
+              {/* Full Name */}
+              <div>
+                <label className="block text-sm sm:text-sm md:text-base lg:text-[20px] poppins-regular text-gray-900 mb-1 sm:mb-2">
+                  Full Name
+                </label>
+                <input
+                  type="text"
+                  placeholder="Enter your Name"
+                  className="w-full p-3 sm:p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-[#00A8FF] text-xs sm:text-sm md:text-base"
+                  required
+                />
+              </div>
+
+              {/* Email Address */}
+              <div>
+                <label className="block text-sm sm:text-sm md:text-base lg:text-[20px] poppins-regular text-gray-900 mb-1 sm:mb-2">
+                  Email Address
+                </label>
+                <input
+                  type="email"
+                  placeholder="Enter your Email"
+                  className="w-full p-3 sm:p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-[#00A8FF] text-xs sm:text-sm md:text-base"
+                  required
+                />
+              </div>
+
+              {/* Mobile */}
+              <div>
+                <label className="block text-sm sm:text-sm md:text-base lg:text-[20px] poppins-regular text-gray-900 mb-1 sm:mb-2">
+                  Mobile
+                </label>
+                <input
+                  type="tel"
+                  placeholder="Enter your Mobile No"
+                  className="w-full p-3 sm:p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-[#00A8FF] text-xs sm:text-sm md:text-base"
+                  required
+                />
+              </div>
+
+              {/* Select Category */}
+              <div>
+                <label className="block text-sm sm:text-sm md:text-base lg:text-[20px] poppins-regular text-gray-900 mb-1 sm:mb-2 text-nowrap">
+                  Select Category
+                </label>
+                <select
+                  className="w-full p-3 sm:p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-[#00A8FF] text-xs sm:text-sm md:text-base text-gray-500"
+                >
+                  <option value="" disabled>Select Category</option>
+                  <option value="general">General Inquiry</option>
+                  <option value="support">Support</option>
+                  <option value="feedback">Feedback</option>
+                </select>
+              </div>
+
+              {/* Message */}
+              <div className="col-span-1 sm:col-span-2">
+                <label className="block text-sm sm:text-sm md:text-base lg:text-[20px] poppins-regular text-gray-900 mb-1 sm:mb-2">
+                  Message
+                </label>
+                <textarea
+                  placeholder="Write your message"
+                  className="w-full p-3 sm:p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-[#00A8FF] text-xs sm:text-sm md:text-base h-24 sm:h-28 md:h-32 lg:h-36"
+                  rows={5}
+                />
+              </div>
+
+              {/* Send Message Button */}
+              <button
+                type="submit"
+                className="col-span-1 sm:col-span-2 ml-auto bg-[#00A8FF] text-white py-2 sm:py-2 md:py-3 px-4 sm:px-4 md:px-6 rounded-lg text-sm sm:text-sm md:text-base lg:text-[16px] poppins-regular hover:bg-[#0088cc] transition-colors cursor-pointer"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+
+
+
+
           {/* Left Column - Contact Information */}
           <div className="bg-[#001C2B] text-white p-4 sm:p-6 md:p-8 rounded-lg flex flex-col space-y-4 sm:space-y-6 md:space-y-8">
             {/* Contact Information */}
@@ -107,88 +193,101 @@ function Contact() {
                   <img src={Facebook} alt="Facebook" className="w-6 h-6 sm:w-8 sm:h-8 md:w-[40px] md:h-[40px]" />
                 </a>
                 <a href="https://www.instagram.com/srktraders25/?hl=en" target="_blank" rel="noopener noreferrer">
-                  <img src={Instagram} alt="Instagram" className="w-6 h-6 sm:w-8 sm:h-8 md:w-[40px] md:h-[40px] mt-0 sm:mt-[2px]" />
+                  <img src={Instagram} alt="Instagram" className="w-6 h-6 sm:w-8 sm:h-8 md:w-[40px] md:h-[40px] mt-0  " />
                 </a>
               </div>
             </div>
           </div>
 
+
+
+
+
           {/* Right Column - Contact Form */}
-          <form className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 md:gap-6">
-            {/* Full Name */}
-            <div>
-              <label className="block text-sm sm:text-sm md:text-base lg:text-[20px] poppins-regular text-gray-900 mb-1 sm:mb-2">
-                Full Name
-              </label>
-              <input
-                type="text"
-                placeholder="Enter your Name"
-                className="w-full p-3 sm:p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-[#00A8FF] text-xs sm:text-sm md:text-base"
-                required
-              />
-            </div>
+          <div className='lg:block  hidden'>
+            <form className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 md:gap-6">
+              {/* Full Name */}
+              <div>
+                <label className="block text-sm sm:text-sm md:text-base lg:text-[20px] poppins-regular text-gray-900 mb-1 sm:mb-2">
+                  Full Name
+                </label>
+                <input
+                  type="text"
+                  placeholder="Enter your Name"
+                  className="w-full p-3 sm:p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-[#00A8FF] text-xs sm:text-sm md:text-base"
+                  required
+                />
+              </div>
 
-            {/* Email Address */}
-            <div>
-              <label className="block text-sm sm:text-sm md:text-base lg:text-[20px] poppins-regular text-gray-900 mb-1 sm:mb-2">
-                Email Address
-              </label>
-              <input
-                type="email"
-                placeholder="Enter your Email"
-                className="w-full p-3 sm:p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-[#00A8FF] text-xs sm:text-sm md:text-base"
-                required
-              />
-            </div>
+              {/* Email Address */}
+              <div>
+                <label className="block text-sm sm:text-sm md:text-base lg:text-[20px] poppins-regular text-gray-900 mb-1 sm:mb-2">
+                  Email Address
+                </label>
+                <input
+                  type="email"
+                  placeholder="Enter your Email"
+                  className="w-full p-3 sm:p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-[#00A8FF] text-xs sm:text-sm md:text-base"
+                  required
+                />
+              </div>
 
-            {/* Mobile */}
-            <div>
-              <label className="block text-sm sm:text-sm md:text-base lg:text-[20px] poppins-regular text-gray-900 mb-1 sm:mb-2">
-                Mobile
-              </label>
-              <input
-                type="tel"
-                placeholder="Enter your Mobile No"
-                className="w-full p-3 sm:p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-[#00A8FF] text-xs sm:text-sm md:text-base"
-                required
-              />
-            </div>
+              {/* Mobile */}
+              <div>
+                <label className="block text-sm sm:text-sm md:text-base lg:text-[20px] poppins-regular text-gray-900 mb-1 sm:mb-2">
+                  Mobile
+                </label>
+                <input
+                  type="tel"
+                  placeholder="Enter your Mobile No"
+                  className="w-full p-3 sm:p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-[#00A8FF] text-xs sm:text-sm md:text-base"
+                  required
+                />
+              </div>
 
-            {/* Select Category */}
-            <div>
-              <label className="block text-sm sm:text-sm md:text-base lg:text-[20px] poppins-regular text-gray-900 mb-1 sm:mb-2">
-                Select Category
-              </label>
-              <select
-                className="w-full p-3 sm:p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-[#00A8FF] text-xs sm:text-sm md:text-base text-gray-500"
+              {/* Select Category */}
+              <div>
+                <label className="block text-sm sm:text-sm md:text-base lg:text-[20px] poppins-regular text-gray-900 mb-1 sm:mb-2 text-nowrap">
+                  Select Category
+                </label>
+                <select
+                  className="w-full p-3 sm:p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-[#00A8FF] text-xs sm:text-sm md:text-base text-gray-500"
+                >
+                  <option value="" disabled>Select Category</option>
+                  <option value="general">General Inquiry</option>
+                  <option value="support">Support</option>
+                  <option value="feedback">Feedback</option>
+                </select>
+              </div>
+
+              {/* Message */}
+              <div className="col-span-1 sm:col-span-2">
+                <label className="block text-sm sm:text-sm md:text-base lg:text-[20px] poppins-regular text-gray-900 mb-1 sm:mb-2">
+                  Message
+                </label>
+                <textarea
+                  placeholder="Write your message"
+                  className="w-full p-3 sm:p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-[#00A8FF] text-xs sm:text-sm md:text-base h-24 sm:h-28 md:h-32 lg:h-36"
+                  rows={5}
+                />
+              </div>
+
+              {/* Send Message Button */}
+              <button
+                type="submit"
+                className="col-span-1 sm:col-span-2 ml-auto bg-[#00A8FF] text-white py-2 sm:py-2 md:py-3 px-4 sm:px-4 md:px-6 rounded-lg text-sm sm:text-sm md:text-base lg:text-[16px] poppins-regular hover:bg-[#0088cc] transition-colors cursor-pointer"
               >
-                <option value="" disabled>Select Category</option>
-                <option value="general">General Inquiry</option>
-                <option value="support">Support</option>
-                <option value="feedback">Feedback</option>
-              </select>
-            </div>
+                Send Message
+              </button>
+            </form>
+          </div>
 
-            {/* Message */}
-            <div className="col-span-1 sm:col-span-2">
-              <label className="block text-sm sm:text-sm md:text-base lg:text-[20px] poppins-regular text-gray-900 mb-1 sm:mb-2">
-                Message
-              </label>
-              <textarea
-                placeholder="Write your message"
-                className="w-full p-3 sm:p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-[#00A8FF] text-xs sm:text-sm md:text-base h-24 sm:h-28 md:h-32 lg:h-36"
-                rows={5}
-              />
-            </div>
 
-            {/* Send Message Button */}
-            <button
-              type="submit"
-              className="col-span-1 sm:col-span-2 ml-auto bg-[#00A8FF] text-white py-2 sm:py-2 md:py-3 px-4 sm:px-4 md:px-6 rounded-lg text-sm sm:text-sm md:text-base lg:text-[16px] poppins-regular hover:bg-[#0088cc] transition-colors cursor-pointer"
-            >
-              Send Message
-            </button>
-          </form>
+
+
+
+
+
         </div>
       </div>
 

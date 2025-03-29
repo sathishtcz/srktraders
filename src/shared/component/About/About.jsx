@@ -34,7 +34,8 @@ const About = () => {
       >
         {/* Overlay */}
         <div className="absolute inset-0 bg-[#001C2B] opacity-50"></div>
-        <div></div>
+        <div className='lg:block hidden'></div>
+   
 
         {/* Centered Content */}
         <div className="relative z-10 flex flex-col items-center justify-center text-center">
@@ -61,10 +62,9 @@ const About = () => {
 
       { /* About */}
       <div   id='about' className="pt-10 sm:pt-12 md:pt-16 lg:pt-[75px] pb-10 sm:pb-12 md:pb-16 lg:pb-[75px] px-4 sm:px-6 md:px-10 lg:px-[150px]">
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 2xl:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-[40px] ">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 2xl:grid-cols-2 gap-4 sm:gap-3 md:gap-4 lg:gap-[28px] ">
 
-          <div className="relative">
-
+       
             <div className="relative">
               <img
                 src={collage}
@@ -73,19 +73,19 @@ const About = () => {
               />
 
             </div>
-          </div>
+       
           {/* <div className="absolute -left-4 sm:-left-6 top-0 h-full flex items-center">
             <p className="text-[#00A8FF] text-xl sm:text-2xl md:text-[25px] alice-regular transform -rotate-90 whitespace-nowrap">
               About Us
             </p>
           </div> */}
           {/* Right Column - Text Content */}
-          <div  className="flex flex-col space-y-2 sm:space-y-3 md:space-y-4 lg:space-y-5">
+          <div  className="flex flex-col justify-center space-y-2 sm:space-y-3 md:space-y-4 lg:space-y-3">
             <p className="lg:block hidden text-[#00A8FF] text-xl sm:text-2xl md:text-[25px] alice-regular lg:text-start text-center">
               About Us
             </p>
 
-            <h2 className="text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] alice-regular leading-tight sm:leading-[45px] md:leading-[50px] text-[#001C2B]">
+            <h2 className="text-[25px] sm:text-[32px] md:text-[36px] lg:text-[40px] alice-regular leading-tight sm:leading-[45px] md:leading-[45px] text-[#001C2B]">
               Explore the Beauty of Modern Tiles: Trends, Designs, and Innovations
             </h2>
 

@@ -6,7 +6,7 @@ function Locateus() {
   return (
     <>
       <div className="relative bg-cover bg-center  flex items-center justify-center "
-        style={{ backgroundImage: "url('/assets/images/Locateus/locate.jpg')" }}>
+        style={{ backgroundImage: "url('/assets/images/Locateus/locate.png')" }}>
 
         <div className="relative z-10 flex flex-col items-center justify-center px-4 max-w-5xl mx-auto pt-15 pb-10">
           <h2 className="alice-regular text-2xl sm:text-2xl md:text-3xl lg:text-[35px] text-white mb-6">LOCATE US</h2>
