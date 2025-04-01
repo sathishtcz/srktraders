@@ -12,12 +12,8 @@ function OurProduct({products,setProducts}) {
   
   return (
     <>
-      <div
-        className="relative bg-cover bg-center flex flex-col items-center justify-around h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] 2xl:h-[450px]"
-        style={{ backgroundImage: "url('/assets/images/About/Banner.png')" }}
-      >
+      <div className="relative bg-cover bg-center flex flex-col items-center justify-around pt-[50px] sm:pt-[200px] h-[250px] sm:h-[350px] md:h-[400px] lg:h-[450px] 2xl:h-[450px]" style={{ backgroundImage: "url('/assets/images/About/Banner.png')" }} >
         <div className="absolute inset-0 bg-[#001C2B] opacity-50"></div>
-        <div></div>
 
         <div className="relative z-10 flex flex-col items-center justify-center text-center">
           <h1 className="alice-regular text-3xl sm:text-4xl md:text-[40px] text-white">
@@ -64,23 +60,23 @@ function OurProduct({products,setProducts}) {
               <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-3 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-10 2xl:gap-[20px]">
                 {/* {products.slice(0, displayCount).map((product) => ( */}
                 {products.map((product) => (
-                  <Link
-                    to={`/products/${product.id}`}
-                    key={product.id}
-                    className="block"
-                  >
-                    <div className="overflow-hidden hover:shadow-lg transition-shadow duration-300 border border-gray-300 rounded p-2 w-full h-full">
-                      <div className="w-full aspect-[4/3] max-h-[400px] md:max-h-[300px] sm:max-h-[250px] xs:max-h-[200px]">
-                        <img
-                          src={product.image}
-                          alt={product.name}
-                          className="w-full h-full object-cover object-center rounded"
-                          loading="lazy"
-                        />
+                  <Link to={`/products/${product.id}`} key={product.id} className="block" >
+                    <div className="spectacledcoder-card1 overflow-hidden group hover:shadow-lg transition-shadow duration-300 border border-gray-300 rounded w-full h-full relative">
+                      <div class="circle1 flex items-center justify-center absolute top-0 right-0">
+                        <p className="animate-jump-in animate-once animate-duration-1000 animate-delay-300 animate-ease-in-out hidden group-hover:block mt-2 text-sm sm:text-sm md:text-base lg:text-lg poppins-regular text-white text-center">
+                          {product.name}
+                        </p> 
                       </div>
-                      <p className="mt-2 text-sm sm:text-sm md:text-base lg:text-lg poppins-regular text-[#080808] text-center">
+                      <img src="/assets/images/favicon/srkfavicon.png" className='w-10 absolute top-1 right-1' alt="" />
+                      {/* <div className='absolute top-0 right-0 pt-7 pr-7 pb-5 pl-6 rounded-b-full rounded-tl-full group-hover:w-full group-hover:h-full group-hover:rounded-[0] bg-white transition-height'>
+                        <img src="/assets/images/favicon/srkfavicon.png" className='w-10 absolute top-1 right-1' alt="" />
+                      </div> */}
+                      <div className="w-full aspect-[4/3] max-h-[400px] md:max-h-[300px] sm:max-h-[250px] xs:max-h-[200px]">
+                        <img src={product.image} alt={product.name} className="w-full h-full object-cover object-center rounded" loading="lazy" />
+                      </div>
+                      {/* <p className="mt-2 text-sm sm:text-sm md:text-base lg:text-lg poppins-regular text-[#080808] text-center">
                         {product.name}
-                      </p>
+                      </p> */}
                     </div>
                   </Link>
                 ))}

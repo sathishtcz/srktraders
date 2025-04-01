@@ -11,13 +11,9 @@ import Instagram from '/assets/images/Contact/Instagram.png'
 function Contact() {
   return (
     <>
-      <div
-        className="relative bg-cover bg-center flex flex-col items-center justify-around h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] 2xl:h-[450px]"
-        style={{ backgroundImage: "url('/assets/images/About/Banner.png')" }}
-      >
+      <div className="relative bg-cover bg-center flex flex-col items-center justify-around pt-[50px] sm:pt-[200px] h-[250px] sm:h-[350px] md:h-[400px] lg:h-[450px] 2xl:h-[450px]" style={{ backgroundImage: "url('/assets/images/About/Banner.png')" }} >
         {/* Overlay */}
         <div className="absolute inset-0 bg-[#001C2B] opacity-50"></div>
-        <div></div>
 
         {/* Centered Content */}
         <div className="relative z-10 flex flex-col items-center justify-center text-center">
@@ -60,94 +56,10 @@ function Contact() {
           </p>
         </div>
 
-
-
-
-
         {/* Main Content Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-[52px] bg-white rounded-lg p-4 sm:p-6 md:p-8 lg:p-10 max-w-[85rem] mx-auto shadow-[0_4px_8px_rgba(0,0,0,0.1),0_-4px_8px_rgba(0,0,0,0.1),4px_0_8px_rgba(0,0,0,0.1),-4px_0_8px_rgba(0,0,0,0.1)] ">
+        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-[52px] bg-white rounded-lg p-4 sm:p-6 md:p-8 lg:p-10 max-w-[85rem] mx-auto shadow-[0_4px_8px_rgba(0,0,0,0.1),0_-4px_8px_rgba(0,0,0,0.1),4px_0_8px_rgba(0,0,0,0.1),-4px_0_8px_rgba(0,0,0,0.1)] ">
 
-          <div className='lg:hidden  block'>
-            <form className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 md:gap-6">
-              {/* Full Name */}
-              <div>
-                <label className="block text-sm sm:text-sm md:text-base lg:text-[20px] poppins-regular text-gray-900 mb-1 sm:mb-2">
-                  Full Name
-                </label>
-                <input
-                  type="text"
-                  placeholder="Enter your Name"
-                  className="w-full p-3 sm:p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-[#00A8FF] text-xs sm:text-sm md:text-base"
-                  required
-                />
-              </div>
-
-              {/* Email Address */}
-              <div>
-                <label className="block text-sm sm:text-sm md:text-base lg:text-[20px] poppins-regular text-gray-900 mb-1 sm:mb-2">
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  placeholder="Enter your Email"
-                  className="w-full p-3 sm:p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-[#00A8FF] text-xs sm:text-sm md:text-base"
-                  required
-                />
-              </div>
-
-              {/* Mobile */}
-              <div>
-                <label className="block text-sm sm:text-sm md:text-base lg:text-[20px] poppins-regular text-gray-900 mb-1 sm:mb-2">
-                  Mobile
-                </label>
-                <input
-                  type="tel"
-                  placeholder="Enter your Mobile No"
-                  className="w-full p-3 sm:p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-[#00A8FF] text-xs sm:text-sm md:text-base"
-                  required
-                />
-              </div>
-
-              {/* Select Category */}
-              <div>
-                <label className="block text-sm sm:text-sm md:text-base lg:text-[20px] poppins-regular text-gray-900 mb-1 sm:mb-2 text-nowrap">
-                  Select Category
-                </label>
-                <select
-                  className="w-full p-3 sm:p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-[#00A8FF] text-xs sm:text-sm md:text-base text-gray-500"
-                >
-                  <option value="" disabled>Select Category</option>
-                  <option value="general">General Inquiry</option>
-                  <option value="support">Support</option>
-                  <option value="feedback">Feedback</option>
-                </select>
-              </div>
-
-              {/* Message */}
-              <div className="col-span-1 sm:col-span-2">
-                <label className="block text-sm sm:text-sm md:text-base lg:text-[20px] poppins-regular text-gray-900 mb-1 sm:mb-2">
-                  Message
-                </label>
-                <textarea
-                  placeholder="Write your message"
-                  className="w-full p-3 sm:p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-[#00A8FF] text-xs sm:text-sm md:text-base h-24 sm:h-28 md:h-32 lg:h-36"
-                  rows={5}
-                />
-              </div>
-
-              {/* Send Message Button */}
-              <button
-                type="submit"
-                className="col-span-1 sm:col-span-2 ml-auto bg-[#00A8FF] text-white py-2 sm:py-2 md:py-3 px-4 sm:px-4 md:px-6 rounded-lg text-sm sm:text-sm md:text-base lg:text-[16px] poppins-regular hover:bg-[#0088cc] transition-colors cursor-pointer"
-              >
-                Send Message
-              </button>
-            </form>
-          </div>
-
-
-
-
+          
           {/* Left Column - Contact Information */}
           <div className="bg-[#001C2B] text-white p-4 sm:p-6 md:p-8 rounded-lg flex flex-col space-y-4 sm:space-y-6 md:space-y-8">
             {/* Contact Information */}
@@ -199,24 +111,15 @@ function Contact() {
             </div>
           </div>
 
-
-
-
-
           {/* Right Column - Contact Form */}
-          <div className='lg:block  hidden'>
+          <div className=''>
             <form className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 md:gap-6">
               {/* Full Name */}
               <div>
                 <label className="block text-sm sm:text-sm md:text-base lg:text-[20px] poppins-regular text-gray-900 mb-1 sm:mb-2">
                   Full Name
                 </label>
-                <input
-                  type="text"
-                  placeholder="Enter your Name"
-                  className="w-full p-3 sm:p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-[#00A8FF] text-xs sm:text-sm md:text-base"
-                  required
-                />
+                <input type="text" placeholder="Enter your Name" className="w-full p-3 sm:p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-[#00A8FF] text-xs sm:text-sm md:text-base" required />
               </div>
 
               {/* Email Address */}
@@ -224,12 +127,7 @@ function Contact() {
                 <label className="block text-sm sm:text-sm md:text-base lg:text-[20px] poppins-regular text-gray-900 mb-1 sm:mb-2">
                   Email Address
                 </label>
-                <input
-                  type="email"
-                  placeholder="Enter your Email"
-                  className="w-full p-3 sm:p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-[#00A8FF] text-xs sm:text-sm md:text-base"
-                  required
-                />
+                <input type="email" placeholder="Enter your Email" className="w-full p-3 sm:p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-[#00A8FF] text-xs sm:text-sm md:text-base" required />
               </div>
 
               {/* Mobile */}
@@ -237,12 +135,7 @@ function Contact() {
                 <label className="block text-sm sm:text-sm md:text-base lg:text-[20px] poppins-regular text-gray-900 mb-1 sm:mb-2">
                   Mobile
                 </label>
-                <input
-                  type="tel"
-                  placeholder="Enter your Mobile No"
-                  className="w-full p-3 sm:p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-[#00A8FF] text-xs sm:text-sm md:text-base"
-                  required
-                />
+                <input type="tel" placeholder="Enter your Mobile No" className="w-full p-3 sm:p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-[#00A8FF] text-xs sm:text-sm md:text-base" required />
               </div>
 
               {/* Select Category */}
@@ -250,9 +143,7 @@ function Contact() {
                 <label className="block text-sm sm:text-sm md:text-base lg:text-[20px] poppins-regular text-gray-900 mb-1 sm:mb-2 text-nowrap">
                   Select Category
                 </label>
-                <select
-                  className="w-full p-3 sm:p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-[#00A8FF] text-xs sm:text-sm md:text-base text-gray-500"
-                >
+                <select className="w-full p-3 sm:p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-[#00A8FF] text-xs sm:text-sm md:text-base text-gray-500" >
                   <option value="" disabled>Select Category</option>
                   <option value="general">General Inquiry</option>
                   <option value="support">Support</option>
@@ -265,34 +156,22 @@ function Contact() {
                 <label className="block text-sm sm:text-sm md:text-base lg:text-[20px] poppins-regular text-gray-900 mb-1 sm:mb-2">
                   Message
                 </label>
-                <textarea
-                  placeholder="Write your message"
-                  className="w-full p-3 sm:p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-[#00A8FF] text-xs sm:text-sm md:text-base h-24 sm:h-28 md:h-32 lg:h-36"
-                  rows={5}
-                />
+                <textarea placeholder="Write your message" className="w-full p-3 sm:p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-[#00A8FF] text-xs sm:text-sm md:text-base h-24 sm:h-28 md:h-32 lg:h-36" rows={5} />
               </div>
 
               {/* Send Message Button */}
-              <button
-                type="submit"
-                className="col-span-1 sm:col-span-2 ml-auto bg-[#00A8FF] text-white py-2 sm:py-2 md:py-3 px-4 sm:px-4 md:px-6 rounded-lg text-sm sm:text-sm md:text-base lg:text-[16px] poppins-regular hover:bg-[#0088cc] transition-colors cursor-pointer"
-              >
-                Send Message
-              </button>
+              <div className='col-span-1 sm:col-span-2 flex justify-center'>
+                  <button type="submit" className="bg-[#00A8FF] text-white py-2 sm:py-2 md:py-3 px-4 sm:px-4 md:px-6 rounded-lg text-sm sm:text-sm md:text-base lg:text-[16px] poppins-regular hover:bg-[#0088cc] transition-colors cursor-pointer" >
+                    Send Message
+                  </button>
+                </div>
             </form>
           </div>
-
-
-
-
-
-
 
         </div>
       </div>
 
-      <div className="max-w-[85rem] mx-auto mb-10">  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7807.859142139595!2d79.4680418982621!3d11.909989812966726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a53579840d05847%3A0xfef21153daff2115!2sSRK%20TRADERS!5e0!3m2!1sen!2sin!4v1742908194614!5m2!1sen!2sin" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className='w-full h-[400px] rounded-tr-[50px] rounded-bl-[50px] shadow-lg ' /></div>
-
+      <div className="max-w-[85rem] mx-auto mb-10"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7807.859142139595!2d79.4680418982621!3d11.909989812966726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a53579840d05847%3A0xfef21153daff2115!2sSRK%20TRADERS!5e0!3m2!1sen!2sin!4v1742908194614!5m2!1sen!2sin" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className='w-full h-[400px] rounded-tr-[50px] rounded-bl-[50px] shadow-lg ' /></div>
 
     </>
   )

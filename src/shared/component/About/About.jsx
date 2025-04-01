@@ -29,15 +29,11 @@ const About = () => {
 
   return (
     <>
-      <div
-        className="relative bg-cover bg-center flex flex-col items-center justify-around h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] 2xl:h-[450px]"
-        style={{ backgroundImage: "url('/assets/images/About/Banner.png')" }}
-      >
+      <div className="relative bg-cover bg-center flex flex-col items-center justify-around pt-[50px] sm:pt-[200px] h-[250px] sm:h-[350px] md:h-[400px] lg:h-[450px] 2xl:h-[450px]" style={{ backgroundImage: "url('/assets/images/About/Banner.png')" }} >
         {/* Overlay */}
         <div className="absolute inset-0 bg-[#001C2B] opacity-50"></div>
-        <div className='lg:block hidden'></div>
-   
 
+   
         {/* Centered Content */}
         <div className="relative z-10 flex flex-col items-center justify-center text-center">
           {/* Title */}

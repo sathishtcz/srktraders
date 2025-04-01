@@ -140,51 +140,22 @@ const Header = () => {
         </div>
 
         {/* Mobile Menu */}
-        <div
-          ref={mobileMenuRef}
-          className={`overflow-hidden transition-all duration-300 ease-in-out ${
-            isMobileMenuOpen ? 'max-h-96' : 'max-h-0'
-          }`}
-        >
-          <div
-            className={`border-t border-gray-400 ${
-              isScrolled ? 'bg-white' : 'bg-white'
-            }`}
-          >
+        <div ref={mobileMenuRef} className={`overflow-hidden transition-all duration-300 ease-in-out ${ isMobileMenuOpen ? 'max-h-96' : 'max-h-0' }`} >
+          <div className={`border-t border-gray-400 ${ isScrolled ? 'bg-white' : 'bg-white' }`} >
             <div className="px-4 py-6 flex flex-col space-y-6 sm:space-y-6 font-medium text-base sm:text-base md:text-[16px]">
-              <Link
-                to="/"
-                className={`${isScrolled ? 'text-black' : 'text-black'}`}
-                onClick={toggleMobileMenu}
-              >
+              <Link to="/" className={`${isScrolled ? 'text-black' : 'text-black'}`} onClick={toggleMobileMenu} >
                 Home
               </Link>
-              <Link
-                to="/aboutus"
-                className={`${isScrolled ? 'text-black' : 'text-black'}`}
-                onClick={toggleMobileMenu}
-              >
+              <Link to="/aboutus" className={`${isScrolled ? 'text-black' : 'text-black'}`} onClick={toggleMobileMenu} >
                 About Us
               </Link>
-              <Link
-                to="/our-products"
-                className={`${isScrolled ? 'text-black' : 'text-black'}`}
-                onClick={toggleMobileMenu}
-              >
+              <Link to="/our-products" className={`${isScrolled ? 'text-black' : 'text-black'}`} onClick={toggleMobileMenu} >
                 Our Products
               </Link>
-              <Link
-                to="/other-products"
-                className={`${isScrolled ? 'text-black' : 'text-black'}`}
-                onClick={toggleMobileMenu}
-              >
+              {/* <Link to="/other-products" className={`${isScrolled ? 'text-black' : 'text-black'}`} onClick={toggleMobileMenu} >
                 Other Products
-              </Link>
-              <Link
-                to="/contactus"
-                className={`${isScrolled ? 'text-black' : 'text-black'}`}
-                onClick={toggleMobileMenu}
-              >
+              </Link> */}
+              <Link to="/contactus" className={`${isScrolled ? 'text-black' : 'text-black'}`} onClick={toggleMobileMenu} >
                 Contact Us
               </Link>
             </div>
