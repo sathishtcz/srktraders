@@ -550,7 +550,6 @@ export default Otherproducts;
 
 // export default Otherproducts;
 
-// next i want as same as for my Other products...dont chnage the category and brand filter logic ...it should work for all devices
 // import React, { useState, useEffect } from 'react';
 // import { Link } from 'react-router-dom';
 // import { otherproducts } from '../../services/otherproductservice';

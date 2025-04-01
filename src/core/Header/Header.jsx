@@ -126,12 +126,12 @@ const Header = () => {
               <Link to="/our-products" className={linkClass('/our-products')}>
                 Our Products
               </Link>
-              <Link
+              {/* <Link
                 to="/other-products"
                 className={linkClass('/other-products')}
               >
                 Other Products
-              </Link>
+              </Link> */}
               <Link to="/contactus" className={linkClass('/contactus')}>
                 Contact Us
               </Link>

@@ -26,6 +26,7 @@ const About = () => {
         }
     }
 }, []);
+
   return (
     <>
       <div
@@ -52,7 +53,7 @@ const About = () => {
                   Home
                 </Link>
               </li>
-              <li className="text-[#00A8FF]">/</li>
+              <li className="text-[#00A8FF] text-[18px]">/</li>
               <li className="text-[#00A8FF] poppins-medium text-[18px]">About Us</li>
             </ol>
           </nav>
@@ -99,7 +100,7 @@ const About = () => {
 
             {/* Paragraphs */}
             <p className="text-justify text-gray-800 text-sm sm:text-base md:text-base lg:text-lg xl:text-lg 2xl:text-lg poppins-regular leading-relaxed sm:leading-[30px] md:leading-[35px]">
-              SRK Traders dealers and supplies all the necessary products for the construction industry, including retail, commercial and industrial sectors. It is a one-stop-shop for buying Steel, Cement, Electricals, Pipe, Paint, and Premium Tiles. With a showroom space of 6000 sq. ft. and a warehouse of 6000 sq. ft, we deal premium brands like Kajaria, Asian Paints, Legrand, Hindware, Coromandel, etc.
+            SRK Traders specializes in premium tiles for the construction industry, catering to retail, commercial, and industrial needs. As a one-stop destination, we offer top brands like Kajaria, Kerovit, Simero, Colortile, and Suzora. With a spacious 6000 sq. ft. showroom and an equally large warehouse, we ensure a diverse range of high-quality tiles with reliable availability.
             </p>
             <p className="text-justify text-gray-800 text-sm sm:text-base md:text-base lg:text-lg xl:text-lg 2xl:text-lg poppins-regular leading-relaxed sm:leading-[30px] md:leading-[35px]">
               We are the only dealers for Kajaria Tiles in Villupuram, and we offer the most comprehensive range of tiles at the most competitive price. We also have a well-experienced team that can meet the needs of our customers in terms of both quality and quantity.

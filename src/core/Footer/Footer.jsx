@@ -27,7 +27,7 @@ function Footer() {
               </Link>
              
               <p className="text-white text-sm sm:text-sm md:text-base lg:text-[16px] leading-relaxed sm:leading-[24px] md:leading-[28px] poppins-light text-justify">
-                SRK Traders dealers and supplies all the necessary products for the construction industry, including retail, commercial, and industrial sectors.
+              SRK Traders is a trusted dealer of premium tiles from leading manufacturers, committed to quality and customer satisfaction.
               </p>
               <div className="flex space-x-3 sm:space-x-4 justify-start">
                 <a
@@ -64,9 +64,9 @@ function Footer() {
                 <Link to="/our-products" className="text-white text-sm sm:text-sm md:text-base lg:text-[16px] poppins-light hover:text-[#00A8FF]">
                   • Our Products
                 </Link>
-                <Link to="/other-products" className="text-white text-sm sm:text-sm md:text-base lg:text-[16px] poppins-light hover:text-[#00A8FF]">
+                {/* <Link to="/other-products" className="text-white text-sm sm:text-sm md:text-base lg:text-[16px] poppins-light hover:text-[#00A8FF]">
                   • Other Products
-                </Link>
+                </Link> */}
                 <Link to="/contactus" className="text-white text-sm sm:text-sm md:text-base lg:text-[16px] poppins-light hover:text-[#00A8FF]">
                   • Contact Us
                 </Link>
